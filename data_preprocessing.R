@@ -106,7 +106,7 @@ sum(temp)/length(temp) # on average 11.87 words in each response
 rm(temp)
 
 
-metadata = data.d[,c("iphow", "sex")]
+metadata = data.d[,c("iid", "sex", "age", "irecausnew","iphow", "irwhere1","irwhere2")]
 
 
 #######################################################
