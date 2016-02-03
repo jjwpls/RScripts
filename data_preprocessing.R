@@ -37,7 +37,7 @@ str(data.l[[1]])
 head(data.l[[1]])
 
 
-# Create the "iid" variable for each elemetn of the list. 
+# Create the "iid" variable for each element of the list. 
 # The input "x" is a vector of characters
 create_iid <- function(x){  
   
@@ -55,7 +55,7 @@ create_iid <- function(x){
 }
 
 
-# Does the function work as it supposed to be?
+# Does the "create_iid" function work?
 test = create_iid(data.l[[1]])
 View(test)
 # Good. So remove "test"
