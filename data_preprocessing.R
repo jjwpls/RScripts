@@ -190,3 +190,31 @@ metadata$iphow <- gsub(pattern = " +", replacement = " ",
 save.image("C:/My Data/NHIS/2004-10/RData/2016.0125.data after cleaning.RData")
 
 
+# Limit the analysis to injuries at home
+homeinj.d = metadata[which((metadata$irwhere1 == "Inside home" | 
+                            metadata$irwhere1 == "Outside home"|
+                            metadata$irwhere2 == "Inside home" | 
+                            metadata$irwhere2 == "Outside home")),]
+
+
+# Examine the distribution of home injuries by injury mechanism
+library(data.table)
+dt = as.data.table(homeinj.d)
+dt[, .N ,by = irecausnew]
+rm(dt)
+# So, "fall", "struck by", and "overexertion" are the big three
+
+
+# Randomly select 100 cases for "struck by" and "overexertion", and 
+# read its narratives
+struckby.d = homeinj.d[which(homeinj.d$irecausnew == "Struck by object or person"),]
+overexer.d = homeinj.d[which(homeinj.d$irecausnew == "Overexertion/strenuous movements"),]
+sample.struckby <- struckby.d[sample(1:nrow(struckby.d), 100,replace=FALSE),]
+sample.overexer <- overexer.d[sample(1:nrow(overexer.d), 100,replace=FALSE),]
+
+
+# Export as xlsx files
+library(xlsx)
+write.xlsx(sample.struckby, "sample.struckby.xlsx")
+write.xlsx(sample.overexer, "sample.overexer.xlsx")
+
