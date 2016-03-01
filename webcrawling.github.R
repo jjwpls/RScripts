@@ -55,7 +55,7 @@ for (n in 1:84) {
 outdata.t2.temp.d = NULL
 
 
-# The same procedure, but the other table on each webpage (urllist.d[n,2])
+# The same procedure, but the other table on each webpage (tables.l[[2]])
 for (n in 1:84) {
   
   url <- paste(urllist.d[n,2])
