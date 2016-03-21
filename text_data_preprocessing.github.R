@@ -1,5 +1,5 @@
 ###########################################################
-#### The scripts below shows how to import text data and ## 
+#### The scripts below show how to import text data and ### 
 #### pre-processthe data for general text mining.##########
 ###########################################################
 library(wordcloud)
