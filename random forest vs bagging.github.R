@@ -22,10 +22,10 @@ names(Boston)
 dim(Boston)
 # 14 variables, one outcome and thirteen predictors
 
-# Built a training set
+# Build a training set
 train = sample(1:nrow(Boston), nrow(Boston)/2)
 
-# Built a test set with the actua data value in that set
+# Build a testing set with the actual data value in that set
 boston.test=Boston[-train,"medv"]
 
 # Run random forests, allowing for 3 predictors selected at each split, i.e., "mtry" = 3
