@@ -1,6 +1,6 @@
 # RScripts
 
-"random forest vs bagging.github.R" compares the testing errors (not out-of-bag errors) from the random forests and bagging (a special case of random forest) method.
+"random forest vs bagging.github.R" compares the testing errors (not out-of-bag errors) bewteen random forests and bagging. Note that bagging is a special case of random forests. 
 
 "text_data_preprocessing.github.R" reads in txt files and pre-processes the text data for general text mining or text analysis.
 
