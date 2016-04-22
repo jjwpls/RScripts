@@ -1,7 +1,9 @@
 # RScripts
 
-"text_data_preprocessing.github.R": read in txt files and pre-process the text data for general text mining or text analysis.
+"random forest vs bagging.github.R" compares the testing errors (not out-of-bag errors) from the random forests and bagging (a special case of random forest) method.
 
-"webcrawling.github.R": extract weather data from a weather wbebsite.
+"text_data_preprocessing.github.R" reads in txt files and pre-processes the text data for general text mining or text analysis.
 
-"basic_descriptive_analysis.github.R": merge two datasets, recode variables, plot variables, and tabulate one variable against antother.
+"webcrawling.github.R" extracts weather data from a weather wbebsite.
+
+"basic_descriptive_analysis.github.R" merges two datasets, recodes variables, plots variables, and tabulates one variable against antother.
