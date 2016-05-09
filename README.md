@@ -4,6 +4,4 @@
 
 "text_data_preprocessing.github.R" reads in txt files and pre-processes the text data for general text mining or text analysis.
 
-"webcrawling.github.R" extracts weather data from a weather wbebsite.
-
 "basic_descriptive_analysis.github.R" merges two datasets, recodes variables, plots variables, and tabulates one variable against antother.
