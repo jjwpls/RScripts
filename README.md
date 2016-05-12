@@ -1,6 +1,6 @@
 # RScripts
 
-"simple_random_survey_simulation.github.R" simulates 100 simple random surveys and compares the distribution of the sample means to the true population total. The universe is the 2004 general election data. 
+"simple_random_survey_simulation.github.R" simulates 100 simple random surveys and compares the distribution of the sample means to the true population total. This exercise is a buildiling block to be used for a more sophisticated simulation. 
 
 "random_forest_vs_bagging.github.R" compares the testing errors (not out-of-bag errors) bewteen random forests and bagging. Note that bagging is a special case of random forests. 
 
